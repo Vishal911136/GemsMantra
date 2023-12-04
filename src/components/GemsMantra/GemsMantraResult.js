@@ -29,7 +29,7 @@ import {
       }
   ]
   
-export default function GemsMantraResult() {
+export default function GemsMantraResult(props) {
 
 
   return (
@@ -37,6 +37,13 @@ export default function GemsMantraResult() {
         <div className=" relative px-3 my-8 ">
             
             <div className='background_image absolute top-0 w-[95%] sm:w-[98%]'>
+                {props.loading?
+                <div className='mx-auto flex items-center justify-center h-screen py-16 max-w-6xl'>
+                    <h6 className='text-center text-lg font-bold'>
+                         Processing , Please wait !!!
+                    </h6>
+                </div>
+                :
                 <div className='mx-auto py-16 max-w-6xl '>
 
                     <div className='grid sm:w-[75%] grid-cols-1 sm:grid-cols-3 px-4 text-sm'>
@@ -122,6 +129,7 @@ export default function GemsMantraResult() {
 
                         </div>
                 </div>
+                }
 
             </div>
         </div>

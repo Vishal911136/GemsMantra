@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <GemsMantra setName={setName} setEmail={setEmail} setPhone={setPhone} setGender={setGender} />
-      <GemsMantraResult />
+      {/* <GemsMantraResult /> */}
     </>
   );
 }
