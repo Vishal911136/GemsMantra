@@ -151,7 +151,7 @@ export default function GemsMantra() {
                   autoComplete="given-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setName(e.target.value)}
-                  
+                  required
                 />
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function GemsMantra() {
                   autoComplete="family-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setEmail(e.target.value)}
-                  
+                  required
                 />
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function GemsMantra() {
                   autoComplete="given-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setPhone(e.target.value)}
-                  
+                  required
                 />
               </div>
             </div>
@@ -197,7 +197,7 @@ export default function GemsMantra() {
               <div className=''>
                   <select id="countries"
                     onChange={(e) => setGender(e.target.value)} 
-                    className="block w-full text-sm rounded-md border-0 px-3.5 py-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full text-sm rounded-md brequiredorder-0 px-3.5 py-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     
                     >
                       <option selected>Gender</option>
@@ -216,7 +216,7 @@ export default function GemsMantra() {
                   <select id="countries"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setPerpose(e.target.value)}
-                  
+                  required
                   >
                       <option selected>General</option>
                       <option value="example 1">Example 1 </option>
@@ -237,7 +237,7 @@ export default function GemsMantra() {
                   autoComplete="family-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setBodyWeight(e.target.value)}
-                  
+                  required
                 />
               </div>
             </div>
@@ -254,7 +254,7 @@ export default function GemsMantra() {
                   autoComplete="given-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setDate(e.target.value)}
-                  
+                  required
                 />
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function GemsMantra() {
                   autoComplete="given-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setTime(e.target.value)}
-                  
+                  required
                 />
               </div>
             </div>
@@ -289,11 +289,11 @@ export default function GemsMantra() {
                   autoComplete="given-name"
                   className="block w-full text-sm rounded-md border-0 px-3.5 py-2 md:py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={(e) => setPlace(e.target.value)}
-                  
+                  required
                 />
               </div>
 
-                <div className='text-red-700 '>
+                <div className='text-red-700 mt-4'>
                   <span>{errorMsg}</span>
                 </div>
 
